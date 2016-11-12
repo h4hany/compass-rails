@@ -1,0 +1,32 @@
+ 
+ 1237  rails new compass -d mysql
+ 1238  rake db:create
+ 1239  bundle install
+ 1240  rails g devise_token_auth:install User auth
+ 1241  rails generate migration addFirstNameToUsers first_name:string 
+ 1242  rails generate migration addLastNameToUsers last_name:string 
+ 1243  rails generate migration addUserNameToUsers user_name:string 
+ 1244  rails generate migration addRegistrationLongitudeToUsers registeration_longitude:float 
+ 1245  rails generate migration addRegistrationLatitudeToUsers registeration_latitude:float 
+ 1246  rails generate migration addAddressToUsers address:string 
+ 1247  rails generate migration addMobileToUsers mobile:string 
+ 1248  rails generate migration addFacebookAccountToUsers facebook_account:string 
+ 1249  rails generate migration addGoogleAccountToUsers google_account:string 
+ 1250  rails generate migration addTwitterAccountToUsers twitter_account:string 
+ 1251  rake db:migrate
+ 1252  rails generate migration removeNameFromUsers name:string 
+ 1253  rails generate migration removeNickNameFromUsers nickname:string 
+ 1254  rake db:migrate
+ 1255  bundle install
+ 1256  rails g model interest interest_name:string parent:integer
+ 1257  rails g model userInterest user_id:integr interest_id:integer
+ 1258  rails g model entity name:string type:string long:float lat:float user_id:integer image:string work_time:string
+ 1259  rails g model entityInterest entity_id:integer interest_id;integer
+ 1260* rails g model userReviewRateEntityTime user_id:integer comment:string rate:integer entity_id:integer time_of_review:time location_of_review_lat:float location_of_review_long:flo
+ 1261  rails g model userHitsActivety user_id:integer entity_id:integer time_of_hits:time
+ 1262  rake db:migrate
+ 1263  mongo
+ 1264  rails g mongoid:config
+ 1265  rake db:migrate
+ 1266  mongo
+ 1267  history >> myhistory.txt

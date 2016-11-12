@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  interest_name: MyString
+  parent: 1
+
+two:
+  interest_name: MyString
+  parent: 1

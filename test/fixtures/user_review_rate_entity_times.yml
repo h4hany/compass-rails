@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  comment: MyString
+  rate: 1
+  entity_id: 1
+  time_of_review: 2016-11-12 18:17:01
+  location_of_review_lat: 1.5
+  location_of_review_long: 1.5
+
+two:
+  user_id: 1
+  comment: MyString
+  rate: 1
+  entity_id: 1
+  time_of_review: 2016-11-12 18:17:01
+  location_of_review_lat: 1.5
+  location_of_review_long: 1.5
